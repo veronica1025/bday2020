@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+body{
+    background-color: rgba(153, 190, 226, 0.993)
+}
+.bg-custom-dark.scrolled{
+    background-color: rgb(222,192,222);
+    transition: background 500ms;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 7px #494949; 
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: #a3a1a1;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#6b6a6a;
+  }
+  
+.carousel-item{
+    height: 100vh;
+}
+.card-container{
+    position: relative;
+    width: 18rem;
+    perspective: 200rem;
+    height: 524px;
+}
+.card-container:hover .card-front{
+    transform: rotateY(180deg);
+}
+.card-container:hover .card-back{
+    transform: rotateY(0deg);
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card{
+    transition: all 0.9s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 15px 15px 15px;
+}
+.card-title{
+    font-family: 'Arvo', serif;
+    color:#4e3f3f;
+    font-weight: bold;
+}
+.card-text{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:#634e4e;
+    margin-bottom: 1px;
+}
+.header-line {
+    height: 3px;
+    width: 100%;
+    display:block;
+  }
+.gradient-color-1{
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0));
+  }
+ .card-back .card-body{
+     position: relative;
+ }
+ .card-body a{
+     position: absolute;
+     top:50%;
+     left:50%;
+     margin:-15% 0 0 -25%;
+ }
+ #random1 h1{
+     font-size: 4rem;
+     font-family: 'Aclonica', sans-serif;
+     color: rgb(53, 51, 51);
+ }
+ #random2 h1{
+     font-size: 6rem;
+     font-family: 'Aclonica', sans-serif;
+     color: rgb(53, 51, 51);
+ }
+ #random3 h1{
+     font-size: 4rem;
+     font-family: 'Aclonica', sans-serif;
+     color: rgb(53, 51, 51);
+ }
+ #random4 h1{
+     font-size: 4rem;
+     font-family: 'Aclonica', sans-serif;
+     color: rgb(53, 51, 51);
+    }
+ .newhr{
+     border: 2px dotted #5e5c5c;
+ }

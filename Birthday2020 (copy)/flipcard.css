@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Kalam&family=Lobster&family=News+Cycle&family=Ranchers&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url("back7.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-custom-dark.scrolled{
+    background-color: rgb(222,192,222);
+    transition: background 500ms;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 7px #494949; 
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: #5e5c5c;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#444343;
+  }
+.newhead{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    letter-spacing: 1px;
+    color: #256199;
+}
+.newhr{
+    border: 1px dotted gray;
+}
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    width: 230px;
+    height: 400px;
+}
+.card{
+    position: relative;
+    margin: 20px 0;
+    width: 230px;
+    height: 400px;
+    background: rgb(193, 212, 248);
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: 10px 10px 15px;
+}
+.card:hover{
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px;
+}
+#unique:hover{
+    transform: perspective(2000px) rotate(10deg);
+    box-shadow: inset 20px 0 50px;
+}
+.card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.card:hover .imgbox{
+    transform: rotateY(-135deg);
+}
+.card .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 0.85rem;
+}
+.quotes{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.2rem;
+    color:#16288b;
+    font-weight: normal;
+}
+.quotes .quotehead{
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 2px;
+}
+.buttonnew{
+    margin-left: 40%;
+    margin-bottom:5%;
+    background-color: rgb(56, 61, 141);
+    border: none;
+    border-radius:10px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color:ivory;
+}
+.buttonnew:hover{
+    background-color: rgb(14, 23, 71);
+    color: ivory;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
